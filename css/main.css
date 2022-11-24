@@ -1,0 +1,101 @@
+/* COMMON */
+body{
+    font-family: "Noto Sans", "malgun gothic", AppleGothic, dotum, sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.15;
+}
+.inner{
+    width: 1050px;
+    margin: 0 auto; /* 가운데 정렬 사용조건 두가지 1. auto를 위해 width값 정의돼야 함. 2. display속성이 block이어야 한다.*/
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+/* HEADER */
+header{
+    top: 0;
+    border: 1px solid black;
+}
+header > .inner{
+    height: 156px;
+}
+header .header-top{
+    border: 1px solid red;
+    height: 35px;
+    width: 100%;
+    position: relative;
+}
+header .header-top ul.user-bar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 12px;
+    line-height: 35px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .header-top ul.user-bar li{
+    cursor: pointer;
+    list-style: none;
+}
+header .header-top ul.user-bar li:first-child > a{
+    color: rgb(95, 0, 128);
+}
+header .header-top ul.user-bar li::before{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 13px;
+    background-color: rgb(217, 217, 217);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+header .header-top ul.user-bar li:first-child::before{
+    display: none;
+}
+header .header-top ul.user-bar li a{
+    padding: 0 12px;
+    font-size: 12px;
+}
+header .header-middle{
+    border: 1px solid seagreen;
+    height: 63px;
+    width: 100%;
+    display: flex;
+}
+header .header-middle .logo{
+    
+}
+header .header-middle .market-beauty{
+    
+}
+header .header-middle .market-beauty a{
+    
+}
+header .header-middle .search-bar{
+
+}
+header .header-middle .user-tool{
+
+}
+header .header-bottom{
+    border: 1px solid blue;
+    height: 56px;
+    width: 100%;
+}
+
+
+/* VISUAL */
+.visual{
+    
+}
+.visual > .inner{
+    height: 120px;
+}
