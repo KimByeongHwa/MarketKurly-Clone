@@ -14,10 +14,16 @@ a{
     text-decoration: none;
     color: #333;
 }
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 
 /* HEADER */
 header{
     top: 0;
+    margin-top: 10px;
 }
 header > .inner{
     height: 156px;
@@ -88,8 +94,6 @@ header .header-middle .market-beauty{
 }
 header .header-middle .market-beauty > button{
     font-family: "Noto Sans KR", "malgun gothic", AppleGothic, dotum, sans-serif;
-    background-color: transparent;
-    border: none;
 }
 header .header-middle .market-beauty .market-mode{
     flex-shrink: 0;
@@ -221,8 +225,409 @@ header .header-bottom .delivery-information a span{
 
 /* VISUAL */
 .visual{
-    
+    background-image: url("https://product-image.kurly.com/cdn-cgi/image/format=auto/banner/main/pc/img/4f52800e-df9a-4919-ba85-8e9742e1aea1.jpg");
+    background-position: center;
 }
 .visual > .inner{
-    height: 120px;
+    height: 370px;
+    margin-bottom: 40px;
+}
+
+/* GOODS */
+.goods{
+
+}
+.goods > .inner{
+
+}
+.goods .goods-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px ;
+    margin-bottom: 27px;
+}
+.goods .goods-top span{
+    color: rgb(51, 51, 51);
+    font-size: 28px;
+    line-height: 1.15;
+    letter-spacing: -0.26px;
+    font-weight: 500;
+    padding: 8px 0;
+}
+.goods .goods-list{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+.goods .goods-list .goods-card{
+    margin-right: 18px;
+}
+.goods .goods-list .goods-card .img-container{
+    height: 320px;
+    position: relative;
+}
+.goods .goods-list .goods-card .img-container img{
+    height: 100%;
+}
+.goods .goods-list .goods-card .img-container button{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+}
+.goods .goods-list .goods-card .goods-info{
+    padding: 14px 10px 0 0;
+}
+.goods .goods-list .goods-card .goods-info .goods-name{
+    font-size: 16px;
+    line-height: 1.45;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.goods .goods-list .goods-card .goods-info .goods-price{
+    display: flex; /* display: flex 후 justify-content:space-between;, align-items: center; 자주 나온다. 외워두자. */
+    justify-content: space-between;
+    align-items: center;
+}
+.goods .goods-list .goods-card .goods-info .goods-price span{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+/* AD */
+.ad{
+
+}
+.ad > .inner{
+    padding: 40px 0;
+}
+.ad a{
+   
+}
+.ad img{
+    height: 140px;
+    width: 1050px;
+}
+
+/* SPECIAL DEALS */
+.special_deals{
+
+}
+.special_deals > .inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0;
+}
+.special_deals .sd-left{
+
+}
+.special_deals .sd-left h2{
+    font-size: 28px;
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -0.26px;
+    margin-bottom: 10px;
+}
+.special_deals .sd-left h3{
+    font-size: 16px;
+    color: rgb(153, 153, 153);
+    font-weight: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    margin-bottom: 24px;
+}
+.special_deals .sd-left .left-time{
+    
+}
+.special_deals .sd-left .left-time span{
+    width: 136px;
+    font-size: 32px;
+    font-weight: 800;
+    color: rgb(51, 51, 51);
+}
+.special_deals .sd-left p{
+    font-size: 14px;
+    color: rgb(204, 204, 204);
+    font-weight: normal;
+    line-height: 1.43;
+    letter-spacing: -0.4px;
+    margin-top: 32px;
+}
+.special_deals .sd-right{
+    width: 694px;
+}
+.special_deals .sd-right .img-container{
+    height: 347px;
+    position: relative;
+}
+.special_deals .sd-right .img-container img{
+    width: 100%;
+    height: 100%;
+}
+.special_deals .sd-right .img-container button{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+}
+.special_deals .sd-right .goods-info{
+    padding-top: 14px;
+}
+.special_deals .sd-right .goods-info .goods-description{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(153, 153, 153);
+    margin-bottom: 8px;
+    line-height: 1.38;
+    word-break: break-word; /* 줄바꿈 시 문자단위로 줄바꿈 되도록 */
+}
+.special_deals .sd-right .goods-info .goods-name{
+    font-size: 16px;
+    line-height: 1.45;
+    color: rgb(51, 51, 51);
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+.special_deals .sd-right .goods-info .goods-price{
+    color: rgb(51, 51, 51);
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.5;
+}
+
+/* REVIEW */
+.review {
+    
+}
+.review > .inner{
+    padding: 40px 0;
+}
+.review .review-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.review .review-top span{
+    padding: 8px 0px;
+    color: rgb(51, 51, 51);
+    font-size: 28px;
+    line-height: 1.15;
+    letter-spacing: -0.26px;
+    font-weight: 500;
+}
+.review .review-top p{
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.45;
+    letter-spacing: -0.2px;
+    text-align: center;
+    color: rgb(153, 153, 153);
+    margin-top: 2px;
+    margin-bottom: 30px;
+}
+.review .review-list{
+    display: flex;
+}
+.review .review-list .img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 175px;
+    height: 175px;
+    margin-right: 3px;
+}
+.review .review-list .img-container:last-child{
+    margin-right: 0;
+}
+.review .review-list .img-container img{
+    width: 100%;
+    height: 100%;
+}
+.review .review-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    line-height: 1.9;
+    font-size: 16px;
+    letter-spacing: -0.05em;
+}
+.review .review-bottom p{
+    color: rgb(153, 153, 153);
+    font-weight: 400;
+    line-height: 1.9;
+    font-size: 16px;
+    letter-spacing: -0.05em;
+    margin: 0;
+}
+.review .review-bottom a{
+    color: rgb(51, 51, 51);
+    font-weight: 500;
+    line-height: 1.9;
+    font-size: 16px;
+    letter-spacing: -0.05em;
+    margin: 0;
+}
+
+/* FOOTER */
+footer{
+    border-top: 1px solid rgb(247, 247, 247);
+    margin-top: 40px;
+}
+footer > .inner{
+    
+}
+footer .footer-top{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-top .footer-left{
+
+}
+footer .footer-top .footer-left button{
+    display: block;
+    width: 140px;
+    height: 40px;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 3px;
+    line-height: 39px;
+    text-align: center;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+footer .footer-top .footer-left h2{
+    padding-bottom: 17px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    margin: 0;
+    padding-bottom: 17px;
+}
+footer .footer-top .footer-left .call{
+    display: block;
+    padding-bottom: 20px;
+    font-weight: normal;
+    font-size: 16px;
+}
+footer .footer-top .footer-left .call .number{
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-right: 8px;
+}
+footer .footer-top .footer-left .contact{
+
+}
+footer .footer-top .footer-left .contact p{
+    margin-top: 2px;
+    color: rgb(153, 153, 153);
+    letter-spacing: -0.5px;
+    line-height: 16.8px;
+}
+footer .footer-top .footer-left .contact .kakao{
+    display: flex;
+    flex-direction: row;
+}
+footer .footer-top .footer-left .contact .kakao p{
+    margin: 0;
+}
+footer .footer-top .footer-left .contact .oneOnOne{
+    display: flex;
+    flex-direction: row;
+}
+footer .footer-top .footer-left .contact .oneOnOne p{
+    margin: 0;
+}
+footer .footer-top .footer-left .contact .mass{
+    display: flex;
+    flex-direction: row;
+}
+footer .footer-top .footer-left .contact .mass p{
+    margin: 0;
+}
+footer .footer-top .footer-left .contact .email{
+    font-size: 12px;
+    line-height: 18px;
+    color: rgb(153, 153, 153);
+}
+footer .footer-top .footer-left .contact .email a{
+    font-size: 12px;
+    line-height: 18px;
+    color: rgb(153, 153, 153);
+}
+footer .footer-top .footer-right{
+
+}
+footer .footer-top .footer-right .footer-list{
+    display: flex;
+    padding-bottom: 29px;
+}
+footer .footer-top .footer-right .footer-list li{
+    margin-right: 14px;
+}
+footer .footer-top .footer-right .footer-about{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgb(153, 153, 153);
+    margin-bottom: 40px;
+}
+footer .footer-top .footer-right .footer-about a{
+    margin-left: 3px;
+    color: rgb(95, 0, 128);
+}
+footer .footer-top .footer-right .sns{
+
+}
+footer .footer-top .footer-right .sns .sns-icons{
+    display: flex;
+}
+footer .footer-top .footer-right .sns .sns-icons a{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+footer .footer-top .footer-right .sns .sns-icons a img{
+    width: 100%;
+    height: 100%;
+}
+footer .footer-middle{
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 0px 33px;
+    border-top: 1px solid rgb(238, 238, 238);
+}
+footer .footer-middle .certification{
+    display: flex;
+    height: 43.5px;
+    text-align: left;
+}
+footer .footer-middle .certification img{
+    width: 34px;
+    margin-right: 10px;
+}
+footer .footer-middle .certification:nth-child(3) img{
+    width: 102px;
+}
+footer .footer-middle .certification p{
+    font-size: 10px;
+    line-height: 14.5px;
+    color: rgb(153, 153, 153);
+}
+footer .footer-bottom{
+    padding: 20px 0px 30px;
+    font-size: 10px;
+    line-height: 15px;
+    text-align: center;
+    color: rgb(153, 153, 153);
+    background-color: rgb(247, 247, 247);
+}
+footer .footer-bottom .reserved{
+    padding-top: 7px;
 }
