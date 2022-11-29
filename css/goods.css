@@ -413,6 +413,40 @@
     letter-spacing: 0px;
 }
 .detail .goods-img-container{
-    margin: 200px 0;
+    margin-top: 200px;
+    margin-bottom: 80px;
     border-bottom: 1px solid rgb(238, 238, 238);
+}
+.detail .notice-info{
+    width: 100%;
+}
+.detail .notice-info h3{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: rgb(102, 102, 102);
+}
+.detail .notice-info .info-table{
+    width: 100%;
+    padding-top: 36px;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.5px;
+}
+.detail .notice-info .info-table .info-table-tr{
+    display: flex;
+}
+.detail .notice-info .info-table .info-table-tr li:nth-child(odd){
+    width: 180px;
+    padding: 0px 18px 18px;
+    background-color: rgb(247, 247, 247);
+    word-break: break-all;
+}
+.detail .notice-info .info-table .notice-info-table li:nth-child(even){
+    display: flex;
+    width: 325px;
+    padding: 0px 18px 18px;
+    color: rgb(102, 102, 102);
 }
