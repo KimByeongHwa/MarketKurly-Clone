@@ -419,6 +419,8 @@
 }
 .detail .notice-info{
     width: 100%;
+    padding-bottom: 72px;
+    border-bottom: 1px solid rgb(238, 238, 238);
 }
 .detail .notice-info h3{
     font-weight: 500;
@@ -437,16 +439,227 @@
 }
 .detail .notice-info .info-table .info-table-tr{
     display: flex;
+    width: 100%;
 }
 .detail .notice-info .info-table .info-table-tr li:nth-child(odd){
     width: 180px;
-    padding: 0px 18px 18px;
+    padding: 18px 18px 0 18px;
     background-color: rgb(247, 247, 247);
     word-break: break-all;
 }
-.detail .notice-info .info-table .notice-info-table li:nth-child(even){
+.detail .notice-info .info-table .info-table-tr li:nth-child(even){
     display: flex;
     width: 325px;
-    padding: 0px 18px 18px;
+    padding: 18px;
     color: rgb(102, 102, 102);
+}
+.detail .notice-info .info-table .info-table-tr:nth-child(3) li{
+    padding-bottom: 18px;
+}
+.detail .seller-info{
+    padding: 72px 0;
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+.detail .seller-info h3{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: rgb(102, 102, 102);
+}
+.detail .seller-info ul{
+    display: flex;
+}
+.detail .seller-info ul li{
+    list-style: none;
+}
+.detail .seller-info ul li:first-child{
+    width: 180px;
+    padding: 18px;
+    background-color: rgb(247, 247, 247);
+    word-break: break-all;
+}
+.detail .seller-info ul li:last-child{
+    width: 325px;
+    padding: 18px;
+    color: rgb(102, 102, 102);
+}
+.detail .why-kurly{
+    padding: 100px 0 88px;
+}
+.detail .why-kurly h3{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: rgb(102, 102, 102);
+}
+.detail .why-kurly .card-container{
+    padding-top: 21px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.detail .why-kurly .card-container .card{
+    width: 315px;
+    padding-top: 59px;
+}
+.detail .why-kurly .card-container .card .card-img-container{
+    display: block;
+    text-align: center;
+}
+.detail .why-kurly .card-container .card img{
+    margin-bottom: 10px;
+}
+.detail .why-kurly .card-container .card .card-title{
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(95, 0, 128);
+    line-height: 27px;
+}
+.detail .why-kurly .card-container .card p{
+    font-weight: 300;
+    font-size: 16px;
+    color: rgb(51, 51, 51);
+    line-height: 25px;
+    text-align: center;
+    padding-top: 22px;
+}
+.detail .why-kurly .card-container .card p span{
+    padding-top: 7px;
+    font-size: 11px;
+    color: rgb(102, 102, 102);
+}
+.detail .customer-center{
+    padding: 60px 5px 0px;
+    border-top: 1px solid rgb(221, 221, 221);
+}
+.detail .customer-center .center-top{
+
+}
+.detail .customer-center .center-top h3{
+    font-weight: 500;
+    font-size: 28px;
+    color: rgb(102, 102, 102);
+}
+.detail .customer-center .center-top p{
+    padding-top: 31px;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(102, 102, 102);
+    line-height: 23px;
+}
+.detail .customer-center .center-top p span{
+    display: inline-block;
+    padding-top: 6px;
+    font-weight: 300;
+    font-size: 16px;
+}
+.detail .customer-center .center-contact{
+    display: flex;
+    padding: 59px 0px 71px;
+}
+.detail .customer-center .center-contact .contact-call{
+    width: 340px;
+}
+.detail .customer-center .center-contact span{
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(95, 0, 128);
+    line-height: 27px;
+}
+.detail .customer-center .center-contact span::before{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 20px;
+    margin: 5px 10px 0px 0px;
+    background-color: rgb(95, 0, 128);
+    vertical-align: top;
+}
+.detail .customer-center .center-contact p{
+    display: block;
+    padding: 9px 0 13px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 25px;
+}
+.detail .customer-center .center-contact .contact-text{
+    font-weight: 300;
+    font-size: 15px;
+    color: rgb(102, 102, 102);
+    line-height: 22px;
+}
+.detail .customer-center .center-contact .contact-kakao{
+    width: 340px;
+}
+
+.detail .customer-center .center-contact .contact-homepage{
+    width: 340px;
+}
+.detail .customer-center .center-return{   
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+}
+.detail .customer-center .center-return .return-box{
+    border: 1px solid rgb(221, 221, 221);
+    padding: 14px 0px 17px;
+}
+.detail .customer-center .center-return .return-strong{
+    width: 179px;
+    padding-left: 29px;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(95, 0, 128);
+}
+.detail .customer-center .center-return span{
+    padding-left: 20px;
+}
+.detail .customer-center .center-return .return-case{
+    display: flex;
+    padding: 39px 0px 40px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+.detail .customer-center .center-return .case-strong{
+    padding-left: 31px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+}
+.detail .customer-center .center-return .return-case .case-left{
+    width: 340px;
+}
+.detail .customer-center .center-return .return-case .case-right{
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 22px;
+}
+.detail .customer-center .center-return .return-case .case-right p{
+    padding-bottom: 20px;
+}
+.detail .customer-center .center-return .return-case .case-right .strong-right{
+    display: block;
+    padding-bottom: 6px;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(95, 0, 128);
+    line-height: 22px;
+}
+.detail .customer-center .center-return .return-case .case-right .strong-right2{
+    display: block;
+    padding: 30px 0px 6px;
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(95, 0, 128);
+    line-height: 22px;
+}
+.detail .customer-center .center-cancel{
+
 }
