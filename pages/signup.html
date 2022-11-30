@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마켓컬리</title>
-    
+    <title>회원가입</title>
+
     <link rel="icon" href="https://www.kurly.com/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/signup.css">
 </head>
+
 <body>
     <!-- HEADER -->
     <header>
@@ -20,10 +22,10 @@
             <div class="header-top">
                 <ul class="user-bar">
                         <li>
-                            <a href="./pages/signup.html">회원가입</a>
+                            <a href="">회원가입</a>
                         </li>
                         <li>
-                            <a href="./pages/signin.html">로그인</a>
+                            <a href="./signin.html">로그인</a>
                         </li>
                         <li>
                             <a href="">고객센터 ▼</a>
@@ -81,146 +83,119 @@
             </div>
         </div>
     </header>
-
-    <!-- VISUAL -->
-    <section class="visual">
-        <div class="inner"></div>
-    </section>
-
-    <!-- GOODS -->
-    <section class="goods">
-        <div class="inner">
-            <div class="goods-top">
-                <span>이 상품 어때요?</span>
-            </div>
-            <div class="goods-list">
-                <a href="" class="goods-card">
-                    <div class="img-container">
-                        <img src="https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1609916380132l0.jpg" alt="goods">
-                        <button>
-                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iNDUiIHZpZXdCb3g9IjAgMCA0NSA0NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBmaWxsPSIjMkEwMDM4IiBvcGFjaXR5PSIuNSIgY3g9IjIyLjUiIGN5PSIyMi41IiByPSIyMi41Ii8+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMDMgMTQuMzgpIiBzdHJva2U9IiNGRkYiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0ibTIwLjQ2IDIuOTEtMi4xNyA5LjIzSDUuODdMMy43MSAyLjkxeiIvPgogICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS13aWR0aD0iMS4yIiBjeD0iMTYuMzUiIGN5PSIxNi44NiIgcj0iMS43Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgc3Ryb2tlLXdpZHRoPSIxLjIiIGN4PSI3LjgyIiBjeT0iMTYuODYiIHI9IjEuNyIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0iTTAgMGgzLjAybDEuNDEgNS45OCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="shopping-cart-button">
-                        </button>
-                    </div>
-                    <div class="goods-info">
-                        <div class="goods-name">[신우] 스티커 콜라주 키트 2종 (택1)</div>
-                        <div class="goods-price"><span>6,900 원</span></div>
-                    </div>
-                </a>                
-                <a href="" class="goods-card">
-                    <div class="img-container">
-                        <img src="https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1657614949985l0.jpg" alt="goods">
-                        <button>
-                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iNDUiIHZpZXdCb3g9IjAgMCA0NSA0NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBmaWxsPSIjMkEwMDM4IiBvcGFjaXR5PSIuNSIgY3g9IjIyLjUiIGN5PSIyMi41IiByPSIyMi41Ii8+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMDMgMTQuMzgpIiBzdHJva2U9IiNGRkYiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0ibTIwLjQ2IDIuOTEtMi4xNyA5LjIzSDUuODdMMy43MSAyLjkxeiIvPgogICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS13aWR0aD0iMS4yIiBjeD0iMTYuMzUiIGN5PSIxNi44NiIgcj0iMS43Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgc3Ryb2tlLXdpZHRoPSIxLjIiIGN4PSI3LjgyIiBjeT0iMTYuODYiIHI9IjEuNyIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0iTTAgMGgzLjAybDEuNDEgNS45OCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="shopping-cart-button">
-                        </button>
-                    </div>
-                    <div class="goods-info">
-                        <div class="goods-name">[종가집] 담백한 나박김치 1.2kg</div>
-                        <div class="goods-price"><span>10,900 원</span></div>
-                    </div>
-                </a>                       
-                <a href="" class="goods-card">
-                    <div class="img-container">
-                        <img src="https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/1636610813470l0.jpg" alt="goods">
-                        <button>
-                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iNDUiIHZpZXdCb3g9IjAgMCA0NSA0NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBmaWxsPSIjMkEwMDM4IiBvcGFjaXR5PSIuNSIgY3g9IjIyLjUiIGN5PSIyMi41IiByPSIyMi41Ii8+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMDMgMTQuMzgpIiBzdHJva2U9IiNGRkYiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0ibTIwLjQ2IDIuOTEtMi4xNyA5LjIzSDUuODdMMy43MSAyLjkxeiIvPgogICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS13aWR0aD0iMS4yIiBjeD0iMTYuMzUiIGN5PSIxNi44NiIgcj0iMS43Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgc3Ryb2tlLXdpZHRoPSIxLjIiIGN4PSI3LjgyIiBjeT0iMTYuODYiIHI9IjEuNyIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0iTTAgMGgzLjAybDEuNDEgNS45OCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="shopping-cart-button">
-                        </button>
-                    </div>                
-                    <div class="goods-info">
-                        <div class="goods-name">[일보스케토] 엑스트라버진올리브유 블랙트러플 인퓨솔리오</div>
-                        <div class="goods-price"><span>15,000 원</span></div>
-                    </div>
-                </a>                      
-                <a href="" class="goods-card">
-                    <div class="img-container">
-                        <img src="https://img-cf.kurly.com/cdn-cgi/image/width=400,format=auto/shop/data/goods/165443628540l0.jpg" alt="goods">
-                        <button>
-                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iNDUiIHZpZXdCb3g9IjAgMCA0NSA0NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBmaWxsPSIjMkEwMDM4IiBvcGFjaXR5PSIuNSIgY3g9IjIyLjUiIGN5PSIyMi41IiByPSIyMi41Ii8+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMDMgMTQuMzgpIiBzdHJva2U9IiNGRkYiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0ibTIwLjQ2IDIuOTEtMi4xNyA5LjIzSDUuODdMMy43MSAyLjkxeiIvPgogICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS13aWR0aD0iMS4yIiBjeD0iMTYuMzUiIGN5PSIxNi44NiIgcj0iMS43Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgc3Ryb2tlLXdpZHRoPSIxLjIiIGN4PSI3LjgyIiBjeT0iMTYuODYiIHI9IjEuNyIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0iTTAgMGgzLjAybDEuNDEgNS45OCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="shopping-cart-button">
-                        </button>
-                    </div>
-                    <div class="goods-info">
-                        <div class="goods-name">[유시몰] 여행용세트_포켓몬</div>
-                        <div class="goods-price"><span>9,900 원</span></div>
-                    </div>                  
-                </a>
-            </div>
-        </div>
-    </section>
     
-    <!-- ADVERTISEMENT -->
-    <section class="ad">
+    <!-- SIGN UP -->
+    <section class="signup">
         <div class="inner">
-            <a href="https://www.kurly.com/main/beauty">
-                <img src="https://product-image.kurly.com/banner/random-band/pc/img/56ae813c-105e-4e07-b213-195079767ba8.jpg" alt="line-ad">
-            </a>
-        </div>
-    </section>
-
-    <!-- SPECIAL_DEALS -->
-    <section class="special_deals">
-        <div class="inner">
-            <div class="sd-left">
-                <h2>선착순 1천 개 한정</h2>
-                <h3>매일 저녁6시 한정수량 오픈!</h3>
-                <div class="left-time">
-                    <span>00:00:00</span>
+            <div class="signup-title">
+                회원가입
+            </div>
+            <div class="line-starter">
+                <span class="star">*</span>필수입력사항
+            </div>
+            <div class="signup-form">
+                <div class="form-tr">
+                    <span class="form-list">아이디<span class="star">*</span></span>
+                    <input type="text" class="signup-input" placeholder="아이디를 입력해주세요.">
+                    <button class="doublecheck"><span>중복확인</span></button>
                 </div>
-                <p>망설이면 늦어요!</p>
-            </div>
-            <div class="sd-right">
-                <div class="img-container">
-                    <img src="https://product-image.kurly.com/product/image/61d82fce-a8e3-4937-af8c-3bc8badc6915.jpg" alt="special_deals goods">
-                    <button>
-                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iNDUiIHZpZXdCb3g9IjAgMCA0NSA0NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBmaWxsPSIjMkEwMDM4IiBvcGFjaXR5PSIuNSIgY3g9IjIyLjUiIGN5PSIyMi41IiByPSIyMi41Ii8+CiAgICAgICAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuMDMgMTQuMzgpIiBzdHJva2U9IiNGRkYiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0ibTIwLjQ2IDIuOTEtMi4xNyA5LjIzSDUuODdMMy43MSAyLjkxeiIvPgogICAgICAgICAgICA8Y2lyY2xlIHN0cm9rZS13aWR0aD0iMS4yIiBjeD0iMTYuMzUiIGN5PSIxNi44NiIgcj0iMS43Ii8+CiAgICAgICAgICAgIDxjaXJjbGUgc3Ryb2tlLXdpZHRoPSIxLjIiIGN4PSI3LjgyIiBjeT0iMTYuODYiIHI9IjEuNyIvPgogICAgICAgICAgICA8cGF0aCBzdHJva2Utd2lkdGg9IjEuNCIgZD0iTTAgMGgzLjAybDEuNDEgNS45OCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+Cg==" alt="shopping-cart-button">
-                    </button>
+                <div class="form-tr">
+                    <span class="form-list">비밀번호<span class="star">*</span></span>
+                    <input type="text" class="signup-input" placeholder="비밀번호를 입력해주세요.">
                 </div>
-                <div class="goods-info">
-                    <div class="goods-description">부담 없이 즐기는 바삭 촉촉 옛날 통닭</div>
-                    <div class="goods-name">두 마리 99치킨 (에어프라이어용)</div>
-                    <div class="goods-price">9,900 원</div>
+                <div class="form-tr">
+                    <span class="form-list">비밀번호 확인<span class="star">*</span></span>
+                    <input type="text" class="signup-input" placeholder="비밀번호를 한번 더 입력해주세요.">
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ADVERTISEMENT -->
-    <section class="ad">
-        <div class="inner">
-            <a href="https://www.kurly.com/shop/event/kurlyEvent.php?htmid=event/2022/1117/kurlystmas/kurlystmas">
-                <img src="https://product-image.kurly.com/banner/random-band/pc/img/80804175-9c7b-4a4d-a821-15682e74c7ba.jpg" alt="line-ad">
-            </a>
-        </div>
-    </section>
-
-    <!-- REVIEW -->
-    <section class="review">
-        <div class="inner">
-            <div class="review-top">
-                <span>인스타그램 고객 후기</span>
-                <p>더 많은 고객 후기가 궁금하다면?</p>
-            </div>
-            <div class="review-list">
-                <a href="" class="img-container">
-                    <img src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/316478240_1332524144184280_5241513097095068250_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=4Ws_0p5YlGsAX8j6fUn&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfD8auolb-k6RcQYmj7VMUsL5GF8YO2U7aBrRnmRJ39xqg&oe=63871BFD" alt="review_img">
-                </a>
-                <a href="" class="img-container">
-                    <img src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/315501076_660065275670781_1329944210714392337_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=c8n5OJArQZsAX-454Tt&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfAT0ZN2nIAvOMCQqgcvATepVsgpc0fXxq8-YzjYA51dMA&oe=6385871E" alt="review_img">
-                </a>
-                <a href="" class="img-container">
-                    <img src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/315373790_806876860605472_8957692286872105574_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=Ld0KTzPst04AX9cWkQw&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDyKtezEi37USj5JSSNGpmHM2jizHeiKrwPGUij92blqg&oe=63865892" alt="review_img">
-                </a>
-                <a href="" class="img-container">
-                    <img src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/314987783_226737453013128_853120366017659792_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=kf-PwGEi3IAAX_fDxmc&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDAUY6WugC7FI8C2Sajpz4WE3OLTZApQbrxljV6FanDSg&oe=6385ACBB" alt="review_img">
-                </a>
-                <a href="" class="img-container">
-                    <img src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/314997544_1212769972786321_7249674406779949199_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=wi09LNHBNMoAX8GCmbk&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBVfX1zeylrCofb0t-US39dF1ZA0G15jBr7TVVbBvBefQ&oe=63864BFE" alt="review_img">
-                </a>
-                <a href="" class="img-container">
-                    <img src="https://scontent-nrt1-1.cdninstagram.com/v/t51.29350-15/313790076_432398388865957_6046685752831462965_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=QHsDUzQDAucAX-8YEzN&_nc_ht=scontent-nrt1-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBAk5WpdaFPYKUJXUMdboOlWcc0zzhxbtAyilN9pbUtUA&oe=6386BA96" alt="review_img">
-                </a>
-            </div>
-            <div class="review-bottom">
-                <p>더 많은 고객 후기가 궁금하다면?</p>
-                <a href="https://www.instagram.com/marketkurly_regram/">@marketkurly_regram</a>
+                <div class="form-tr">
+                    <span class="form-list">이름<span class="star">*</span></span>
+                    <input type="text" class="signup-input" placeholder="이름을 입력해주세요.">
+                </div>
+                <div class="form-tr">
+                    <span class="form-list">이메일<span class="star">*</span></span>
+                    <input type="text" class="signup-input" placeholder="예: marketkurly@kurly.com">
+                    <button class="doublecheck"><span>중복확인</span></button>
+                </div>
+                <div class="form-tr">
+                    <span class="form-list">휴대폰<span class="star">*</span></span>
+                    <input type="text" class="signup-input" placeholder="예: 숫자만 입력해주세요.">
+                    <button class="doublecheck"><span>인증번호 받기</span></button>
+                </div>
+                <div class="form-tr">
+                    <span class="form-list">주소<span class="star">*</span></span>
+                    <div class="address-container">
+                        <button class="address">
+                            <img src="https://res.kurly.com/pc/service/cart/2007/ico_search.svg" alt="">
+                            <span class="span">주소 검색</span>
+                        </button>
+                        <span class="form-text">배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
+                    </div>
+                </div>
+                <div class="form-tr">
+                    <span class="form-list">성별</span>
+                    <div class="gender-check">
+                        <label class="radio-button">
+                            <input type="radio" name="gender">
+                            <span>남자</span>
+                        </label>
+                        <label class="radio-button">
+                            <input type="radio" name="gender">
+                            <span>여자</span>
+                        </label>
+                        <label class="radio-button">
+                            <input type="radio" name="gender" checked>
+                            <span>선택안함</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-tr">
+                    <span class="form-list">생년월일</span>
+                    <div class="birth-container">
+                        <div class="birth-year">
+                            <input type="text" placeholder="YYYY">
+                        </div>
+                        <span></span>
+                        <div class="birth-month">
+                            <input type="text" placeholder="MM">
+                        </div>
+                        <span></span>
+                        <div class="birth-day">
+                            <input type="text" placeholder="DD">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-tr">
+                    <span class="form-list">추가입력 사항</span>
+                    <div class="extra-input">
+                        <label class="radio-button">
+                            <input type="radio" name="extra">
+                            <span>친구초대 추천인 아이디</span>
+                        </label>
+                        <label class="radio-button">
+                            <input type="radio" name="extra">
+                            <span>참여 이벤트명</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="line-tos"></div>
+                <div class="form-tr">
+                    <span class="form-list">이용약관동의<span class="star">*</span></span>
+                    <div class="tos">
+                        <div class="tos-tr">
+                            <div class="tos-img-container">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt="check-img">
+                            </div>
+                            <span class="agree-all">전체 동의합니다.</span>
+                        </div>
+                        <p>선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</p>
+                        <div class="tos-tr">
+                            <div class="tos-img-container">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K" alt="check-img">
+                            </div>
+                            <span class="agree">이용약관 동의</span>
+                        </div>
+                    </div>                  
+                </div>
             </div>
         </div>
     </section>
@@ -350,7 +325,4 @@
             <p class="reserved">© KURLY CORP. ALL RIGHTS RESERVED</p>
         </div>
     </footer>
-
-    <script src="./js/main.js"></script>
 </body>
-</html>
